@@ -1,0 +1,8 @@
+<map id="run" name="run">
+<area shape="rect" id="node2" href="$classvocali_1_1_dati.html#ab3ad7ddf0f14a52ac316686adbced1ae" title="vocali.Dati.getSchermo" alt="" coords="109,5,264,32"/>
+<area shape="rect" id="node3" href="$classvocali_1_1_dati.html#a6db18675565a4ef437583cf0e25c2fc5" title="controlla se i thread sono terminati " alt="" coords="103,56,270,83"/>
+<area shape="rect" id="node4" href="$classvocali_1_1_schermo.html#aca3e11ff18cd525f9a417d50d0a4ac95" title="vocali.Schermo.getSemaforo" alt="" coords="93,107,280,133"/>
+<area shape="rect" id="node5" href="$classvocali_1_1_semaforo.html#afc4e41716e5e0c87146c4d8b199f3c7a" title="vocali.Semaforo.Wait" alt="" coords="115,157,259,184"/>
+<area shape="rect" id="node6" href="$classvocali_1_1_schermo.html#a188d400c41cff60a5647efd48d327371" title="vocali.Schermo.getBuffer" alt="" coords="104,208,269,235"/>
+<area shape="rect" id="node7" href="$classvocali_1_1_semaforo.html#a70e3e26de78b8ed879d1e5a790189bc8" title="vocali.Semaforo.Signal" alt="" coords="110,259,263,285"/>
+</map>

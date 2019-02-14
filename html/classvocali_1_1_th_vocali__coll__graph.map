@@ -1,0 +1,5 @@
+<map id="ThVocali" name="ThVocali">
+<area shape="rect" id="node3" href="$classvocali_1_1_dati.html" title="{Dati\n|&#45; VOCALI\l&#45; num\l&#45; esecuzione\l|+ Dati()\l+ getSchermo()\l+ getNum()\l+ incNum()\l+ getMax()\l+ sonoFinitiTutti()\l+ setFinito()\l&#45; getIndex()\l}" alt="" coords="91,513,213,723"/>
+<area shape="rect" id="node4" href="$classvocali_1_1_schermo.html" title="{Schermo\n||+ Schermo()\l+ getSemaforo()\l+ getBuffer()\l}" alt="" coords="95,344,209,451"/>
+<area shape="rect" id="node5" href="$classvocali_1_1_semaforo.html" title="{Semaforo\n|~ valore\l|+ Semaforo()\l+ Wait()\l+ Signal()\l+ P()\l+ V()\l}" alt="" coords="47,145,145,281"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Dati" name="Dati">
+<area shape="rect" id="node2" href="$classvocali_1_1_schermo.html" title="{Schermo\n||+ Schermo()\l+ getSemaforo()\l+ getBuffer()\l}" alt="" coords="53,344,167,451"/>
+<area shape="rect" id="node3" href="$classvocali_1_1_semaforo.html" title="{Semaforo\n|~ valore\l|+ Semaforo()\l+ Wait()\l+ Signal()\l+ P()\l+ V()\l}" alt="" coords="5,145,103,281"/>
+</map>
