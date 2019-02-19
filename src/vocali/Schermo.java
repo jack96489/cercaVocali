@@ -5,9 +5,6 @@
  */
 package vocali;
 
-import java.util.ArrayDeque;
-import java.util.Queue;
-
 /**
  *
  * @author giaco
@@ -19,22 +16,29 @@ public class Schermo {
      *
      * @author Giacomo Orsenigo
      */
-    private Queue<String> buffer;
+    private String buffer;
 
-    private final Semaforo semaforo;
+    private final Semaforo semLetto, semScritto;
 
     public Schermo() {
-        this.buffer = new ArrayDeque();
-        this.semaforo = new Semaforo(1);
+        this.buffer = new String();
+        this.semLetto = new Semaforo(1);
+        semScritto= new Semaforo(0);
     }
 
-    public Semaforo getSemaforo() {
-        return semaforo;
-    }
-
-    public Queue<String> getBuffer() {
+    public String getBuffer() {
         return buffer;
     }
-   
-    
+
+    public Semaforo getSemLetto() {
+        return semLetto;
+    }
+
+    public Semaforo getSemScritto() {
+        return semScritto;
+    }
+
+    public synchronized void setBuffer(String buffer) {
+        this.buffer = buffer;
+    }    
 }

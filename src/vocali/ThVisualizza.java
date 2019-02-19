@@ -5,9 +5,6 @@
  */
 package vocali;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *
  * @author giaco
@@ -25,12 +22,12 @@ public class ThVisualizza extends Thread {
         final Schermo schermo = ptrDati.getSchermo();
         System.out.println("Inizio la stampa...");
         while (!ptrDati.sonoFinitiTutti()) {
-                schermo.getSemaforo().Wait();
-                String s = schermo.getBuffer().poll();
+                schermo.getSemScritto().Wait();
+                String s = schermo.getBuffer();
                 if (s != null) {
                     System.out.println(s);
                 }
-                schermo.getSemaforo().Signal();
+                schermo.getSemLetto().Signal();
                 yield();        
                 if(isInterrupted())
                     return;

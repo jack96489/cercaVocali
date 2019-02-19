@@ -61,7 +61,7 @@ public class Dati {
         return num[getIndex(Vocale)];
     }
 
-    public void incNum(char Vocale) {
+    public synchronized void incNum(char Vocale) {
         num[getIndex(Vocale)]++;
     }
 
@@ -107,7 +107,7 @@ public class Dati {
      * @param vocale vocale di cui impostare il thread come terminato
      * @author Giacomo Orsenigo
      */
-    public void setFinito(char vocale) {
+    public synchronized void setFinito(char vocale) {
         esecuzione[getIndex(vocale)] = false;
     }
 

@@ -80,6 +80,7 @@ public class Main {
                 for (ThVocali th : thVocali) {
                     th.join();
                 }
+                vis.interrupt();
                 vis.join();
 
                 //controllo se ha vinto

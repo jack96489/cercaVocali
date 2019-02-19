@@ -16,7 +16,7 @@ public class ThVocali extends Thread {
 
     /**
      * puntatore a un oggetto che contiene i dati condivisi
-     * 
+     *
      * @author Giacomo Orsenigo
      */
     private Dati ptrDati;
@@ -86,9 +86,9 @@ public class ThVocali extends Thread {
                 if (frase.charAt(i) == vocale) {
                     //System.out.println(vocale);
                     ptrDati.incNum(vocale);
-                    ptrDati.getSchermo().getSemaforo().Wait();
-                    ptrDati.getSchermo().getBuffer().add("Ho trovato: " + vocale);
-                    ptrDati.getSchermo().getSemaforo().Signal();
+                    ptrDati.getSchermo().getSemLetto().Wait();
+                    ptrDati.getSchermo().setBuffer("Ho trovato: " + vocale);
+                    ptrDati.getSchermo().getSemScritto().Signal();
                 }
 
                 if (delay) {
@@ -103,6 +103,7 @@ public class ThVocali extends Thread {
             System.out.println(ex);
         }
         ptrDati.setFinito(vocale);
+        ptrDati.getSchermo().getSemScritto().Signal();
         //System.out.println("Thead " + vocale + " finito");
     }
 }

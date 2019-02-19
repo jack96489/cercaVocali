@@ -22,6 +22,7 @@ public class Semaforo {
             try {
                 wait();
             } catch (InterruptedException e) {
+                return;
             }
         }
         valore--;
